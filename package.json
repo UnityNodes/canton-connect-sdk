@@ -1,0 +1,24 @@
+{
+  "name": "canton-connect",
+  "version": "0.1.0",
+  "private": true,
+  "description": "wagmi-style React hooks for Canton Network Ledger API v2",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter='*' build",
+    "test": "bun run --filter='*' test",
+    "typecheck": "bun run --filter='*' typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "author": "UnityNodes",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UnityNodes/canton-connect-sdk"
+  },
+  "homepage": "https://connect.unitynodes.com"
+}

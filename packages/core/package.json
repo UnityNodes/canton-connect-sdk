@@ -1,0 +1,32 @@
+{
+  "name": "@canton-connect/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic Canton Network Ledger API v2 client",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./actions": {
+      "import": "./dist/actions/index.js",
+      "require": "./dist/actions/index.js",
+      "types": "./dist/actions/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "typecheck": "tsc -b --noEmit",
+    "test": "bun test"
+  },
+  "keywords": ["canton", "daml", "canton-network", "ledger-api"],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

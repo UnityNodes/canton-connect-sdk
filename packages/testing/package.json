@@ -1,0 +1,29 @@
+{
+  "name": "@canton-connect/testing",
+  "version": "0.1.0",
+  "description": "Mock Canton ledger for testing canton-connect apps",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "typecheck": "tsc -b --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@canton-connect/core": "workspace:*"
+  },
+  "keywords": ["canton", "daml", "testing", "mock"],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

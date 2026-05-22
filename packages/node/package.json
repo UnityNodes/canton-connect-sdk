@@ -1,0 +1,32 @@
+{
+  "name": "@canton-connect/node",
+  "version": "0.1.0",
+  "description": "Node.js Canton Network client - bots and server-side automation",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -b --watch",
+    "typecheck": "tsc -b --noEmit",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@canton-connect/core": "workspace:*"
+  },
+  "keywords": ["canton", "daml", "node", "bot", "automation"],
+  "license": "Apache-2.0",
+  "author": "UnityNodes",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
